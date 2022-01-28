@@ -83,7 +83,7 @@ public class ExpensesManager {
 	 String getMaxOrderCustomerName() {
 		 double maxCategorySum = 0;
 		 String maxCategoryName = "";
-		for (String s : expensesByCategories.keySet()) {
+		/*for (String s : expensesByCategories.keySet()) {
 			ArrayList<Double> expenses = expensesByCategories.get(s);
 			double sum = 0;
 			for (Double d: expenses){
@@ -93,9 +93,9 @@ public class ExpensesManager {
 				maxCategorySum=sum;
 				maxCategoryName = s;
 			}
-		}
+		}*/
 		 // Здесь должен быть обход по значениям
-		/* for (String s : expensesByCategories.keySet()) {
+		 for (String s : expensesByCategories.keySet()) {
 			 double sum = 0;
 			 for (double orderPrice : expensesByCategories.get(s)) {
 				 sum += orderPrice;
@@ -104,7 +104,7 @@ public class ExpensesManager {
 				 maxCategorySum = sum;
 				 maxCategoryName = s;
 			 }
-		 }*/
+		 }
 
 		 return maxCategoryName;
 	 }
